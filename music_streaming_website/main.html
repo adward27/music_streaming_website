@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/mainstyle.css">
+    <link rel="stylesheet" href="./CSS/MusicPlayer.css">
+    <title>비트뮤직</title>
+    <link rel="shortcut icon" href="./images/favicon.png"/>
+    <script src="https://kit.fontawesome.com/62f45db2c0.js" 
+    crossorigin="anonymous">
+    </script>
+    <script src="./JS/main.js" defer>
+    </script>
+</head>
+<body>
+    <!--헤더-->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="./images/favicon.png">
+                <a href="">Music</a>
+            </div>
+        
+            <ul class="navbar__menu">
+            </ul>
+
+            <ul class="navbar__icons">
+                <fieldset>
+                    <label>
+                      <input role="switch" type="checkbox" checked id="dark_mode"/>
+                      <span id="dark_mode_text">화면 밝기</span>
+                    </label>
+                  </fieldset>
+            </ul>
+
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</header>
+
+<!--메인 영역-->
+<main>
+    <!--이미지 슬라이더-->
+    <section class="img-slider-container">
+        <div class="img-slider">
+            <img src="./images/기타.png" alt="Slide 1" class="img-slide">
+            <img src="./images/헤드셋.jpg" alt="Slide 2" class="img-slide">
+            <img src="./images/석양.jpg" alt="Slide 3" class="img-slide">
+        </div>
+        <button class="prev" id="prevBtn">◀</button>
+        <button class="next" id="nextBtn">▶</button>
+    </section>
+
+    <!--그리드 컨테이너-->
+    <section class="grid">
+        <div class="container">
+            <div class="rank">
+                <div class="title">
+                    <h1>곡 차트</h1>
+                <div class="info">
+                    <strong>현재 시간 : <span id="clock">Loading...</span></strong>
+                    <time datetime=""></time>
+                </div>
+                </div>
+                <ul class="rank__menu">
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="https://ticket.melon.com/performance/index.htm?prodId=210674" title="티켓 (웃는남자)" class="mlog">
+                    <img height="300px" width="400px" src="./images/웃는남자.png" alt="">
+                    <span class="bg_album_frame"></span>
+                </a>
+            </div>
+            <div class="outer">
+                <div class="button-list">
+                    <button class="button-left"><i class="fa-solid fa-caret-left"></i></button>
+                    <button class="button-right"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
+                <div class="inner-list">
+                    <div class="inner">
+                        <img src="./images/GOT7.jpg" height="420">
+                    </div>
+                    <div class="inner">
+                        <img src="./images/zerob.jpg" height="420">
+                    </div>
+                    <div class="inner">
+                        <img src="./images/kick.jpg" height="420">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="introduce">
+                <div class="meu">
+                    <img src="./images/ze1.jpg" id="ze1.png" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15782"><span class="nt1">감사와 사랑을 담은'1000만 챌린지'스트리밍 기부 챌린지 - ZEROBASEONE 'Doctor! Doctor!'</span>
+                        <span class="nt2">비하인드 컷</span></a><span class="nt3">멜론매거진</span></div>
+                </div>
+                <div class="meu">
+                    <img src="./images/ze2.jpg" id="ze2.jpg" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15786"><span class="nt1">사랑으로 중독, 치유되는 미스터리한 여정 - ZEROBASEONE</span>
+                        <span class="nt2">비하인드 컷</span></a><span class="nt3">멜론매거진</span></div>
+                </div>
+                <div class="meu">
+                    <img src="./images/new.jpg" id="new.jpg" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15776"><span class="nt1">2025년, 애도하는 마음으로 시작하기</span>
+                        <span class="nt2">장르 인사이드</span></a><span class="nt3">멜론매거진</span></div>
+                    </div>
+                <div class="meu">
+                <img src="./images/sm.jpg" id="sm.jpg" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15747"><span class="nt1">SM과 핑크블러드의 30주년 축제! 'SMTOWN LIVE 2025 [THE CULTURE, THE FUTURE] in SEOL'</span>
+                        <span class="nt2">매거진 이벤트</span></a><span class="nt3">멜론매거진</span></div>
+                </div>
+                <div class="meu">
+                <img src="./images/balad.jpg" id="balad.jpg" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15780"><span class="nt1">조성진, 라벨을 마주하다: 조성진의 라벨 전곡 연주 프로젝트</span>
+                        <span class="nt2">에디션</span></a><span class="nt3">멜론매거진</span></div>
+                </div>
+                <div class="meu">
+                <img src="./images/billbord.jpg" id="billbord.jpg" width="190" height="150"><br>
+                    <div><a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=15784"><span class="nt1">한 눈에 보는 1월 셋째 주 빌보드 소식</span>
+                    <span class="nt2">위클리 뮤직 뉴스</span></a><span class="nt3">멜론매거진</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!--사이드바-->
+    <aside>
+        <div class="inner_body">
+            <button onclick="scrollButton" id="scrollButton"><i class="fa-solid fa-caret-up"></i></button>
+        </div>
+    </aside>
+
+    <!--재생 모달-->
+    <section id="music_container">
+        <div class="music-player">
+            <!-- Top Section -->
+            <div class="top-section">
+                <div class="icon" id="close"><i class="fa-solid fa-xmark"></i></div> <!-- 닫기 버튼 -->
+            </div>
+
+            <!-- Album Art -->
+            <div class="album-art">
+                <img src="" alt="Album Art">
+            </div>
+
+            <!-- Track Info -->
+            <div class="track-info">
+                <div class="track-title" id="track-title"></div>
+                <div class="track-artist" id="track-artist"></div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="prev">◀◀</button>
+                <button class="play-button" id="play">&#9654;</button>
+                <button id="next">▶▶</button>
+            </div>
+
+            <!-- Time -->
+            <div class="time">
+                <span id="current-time">00:00</span> / <span id="total-time">03:16</span>
+            </div>
+        </div>
+        <audio id="audio" preload="auto"></audio> <!-- 실제 음악 파일 로드 -->
+    </div>
+        <script src="./JS/MusicPlayer.js"></script> <!-- 스크립트 파일 링크 -->
+    </section>
+</main>
+
+<!--푸터 부분-->
+<footer>
+<div class="footer_container">
+    <div class="footer_menu">
+        <ul>
+            <li>
+                <a href="//www.melon.com/m6/campaign.htm"><span>비트6.0 둘러보기</span></a>
+            </li>
+            <li>
+                <a href="//studio.melon.com/"><span>비트 스튜디오</span></a>
+            </li>
+            <li>
+                <a href="https://www.melon.com/customer/serviceintro/index.htm"><span>Windows 플레이어</span></a>
+            </li>
+            <li><a href="https://www.melon.com/customer/serviceintro/multi_pc_web.htm"><span>Mac 플레이어</span></a>
+            </li>
+            <li><a href="https://faqs2.melon.com/customer/index.htm"><span>고객센터</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <p>
+        <div class="first">
+            <strong>(주)카카오엔터테이먼트</strong>
+            "&nbsp;&nbsp;경기도 성남시 분당구 판교역로 221"
+        </div>
+        <div>공동대표이사 : 권기수, 장윤중</div>
+        <div>사업자등록번호 : 220-88-02594</div>
+        <div>통신판매업신고번호 : 2018-성남분당B-0004 사업자정보확인</div>
+        <br>
+        <div class="first">문의전화 : 1566-7727 (평일 09:00-18:00, 유로)</div>
+        <div>"이메일 :" melon_info@kakaoent.com</div>
+        <div>호스팅서비스사업자 : (주)카카오엔터인먼트</div>
+    </p>
+</div>
+</footer>
+
+</body>
+</html>
